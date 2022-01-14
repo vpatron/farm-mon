@@ -95,14 +95,16 @@ This flow sensor switch is made of brass, all materials are in line with ROHS te
 **Note 1:** I calibrated this by running a garden hose into a 5 gallon bucket and 
 recording the number of pulses counted. But when we ran it at the farm, the indicated
 flow rate was much higher (by 3x or 4x!) what was expected. This needs to be investigated.
+Perhaps the pulse frequency is not exactly linear to flow rate.
 
 **Note 2:** The pulse counting is done with an interrupt in MicroPython. MicroPython is
 slow. But testing indicated that it ran fast enough to accurately count up to 2,000 pulses
 per second.
 
 **Note 3:** Even with lots of teflon tape, there's still a small leak because of the
-difference between British thread shape (this device) and US pipe threads. This was
-tolerable. Flow sensors with US threads at McMaster-Carr are about $300.
+difference between British thread shape (this device) and US pipe threads. The small
+leak was tolerable because it only happens during irrigation. Flow sensors with US
+threads at McMaster-Carr are about $300.
 
 **Note 3:** There's a bug in the code where the flow rate will suddenly read something
 like 160 gallons (per period). Haven't figured this out yet.

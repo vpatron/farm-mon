@@ -1,0 +1,7 @@
+{
+    "hostname": "esp-farm-mon",
+    "ssid": "Alcatel LINKZONE 8580",
+    "pwd": "12345678",
+    "1wire_addr1": [40, 255, 163, 113, 0, 23, 3, 114],
+    "api_key":"THINGSPEAKAPIKEY"
+}
